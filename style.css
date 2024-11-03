@@ -64,6 +64,11 @@ header nav li:last-child a{
 header nav a:hover{
     color:white;
     background-color: bisque;
+    transition-duration: 2s;
+    /* transition-timing-function: ; */
+    /* transation property ile tek özellik seçilebilir. Varsayılan alldur. Araya virgül koyarak özelliklerde seçilebilir. */
+    /* transition-property: all; */
+    /* transition-delay: 2s; */
 }
 .clear{
     clear:both;
@@ -94,6 +99,44 @@ header nav a:hover{
     }
     /* 100%{} */
 }
+/* varsayılan position değeri statictir. Absolute iskeletten kopan konumunu pencereye doğru öne doğru gelir float çalışmaz. Top left bottom rightdan değer alır. Fixed sayfada stabil kalır.Relative static iskelet gibiler.İçinde absolute yapılar varsa onları tutar ve konumunu aldırır.*/
+#slayt2{
+    height: 460px;
+    border:5px solid bisque;
+    box-sizing:border-box;
+    border-radius:5px;
+    position:relative;
+    overflow: hidden;
+}
+#slayt2 div{
+    width:3010px;
+    height:460px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    animation-name:kayanslayt;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-delay:2s ;
+    /* delay bekleme süresi verir. */
+}
+@keyframes kayanslayt{
+    /* 0%{} */
+    33%{left: -1000px;}
+    66%{left:-2000px;}
+    /* 100%{} */
+}
+#slayt2 div:hover{
+    animation-play-state:paused ;
+    /* animasyonu durdurmayı sağlar.Running yüklenir yüklenmez hep çalışmaya başlar. Pause sayfa tarayıcıya yüklenir yüklenmez dursun.Paused hoverda kullanılırsa üzerine gelince durmasını sağlar.*/
+
+}
+#slayt2 div img{
+    width:1000px;
+    height:460px;
+}
+/* transation hovera geçişin yavaş yavaş olmasını sağlar. */
 
 
 
