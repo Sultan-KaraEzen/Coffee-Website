@@ -1,0 +1,100 @@
+ /* Otomaik 8px margin gelir */
+
+*{
+    margin:0px;
+    padding:0px;
+    color:bisque;
+    list-style: none;
+    font-family: Arial;
+    
+}
+#page{
+    width:1000px;
+    height:1800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: gray;
+
+}
+/* divler içindekiler kadar yüksektir. */
+#logo{
+    width:250px;
+    float:left;
+    text-align: center;
+}
+#logo img{
+    width:150px;
+    height: 150px;
+}
+#logo h1{
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-shadow:3px 3px 5px rgb(63,62,62) ;
+    /* ilk iki değer dikey ve yatay konumu ifade eder. */
+    /* üçüncü değer bulanıklık oranı */
+    /* box-shadow displayı blok olana uygulanır. */
+    /* box-shadow: 10px 20px 5px red; */
+    line-height: 50px;
+}
+header nav{
+    float:right;
+    width:750px;
+    margin-top:145px;
+}
+header nav li{
+    float:left;
+    /* İnline elementlerin genişlik ve yüksekliği olmaz. */
+   
+}
+
+header nav a{
+    /* display blok ise with değeri alabilir. */
+    display:block;
+    width:150px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size:20px;
+    border-right:2px solid bisque;
+    box-sizing:border-box;
+}
+header nav li:last-child a{
+    /* (2)nth-child 2.çocuk anlamında geliyor. */
+    border-right:none;}
+header nav a:hover{
+    color:white;
+    background-color: bisque;
+}
+.clear{
+    clear:both;
+}
+#slayt{
+    height: 460px;
+    border:5px solid bisque;
+    box-sizing:border-box;
+    border-radius:5px;
+    background-image:url("images/banner.jpg");
+    background-size:1000px 460px;
+    animation-name: degisen_arkaplan;
+    animation-duration: 15s;
+    /* animation-delay: 2s; başlama süresi */
+    animation-iteration-count: infinite;
+    /* infinite tekrar oluşturur. Sonsuz olmasını istemezseniz sayı belirtilir.*/
+    /* animation-timing-function: ease standart ease in out hızlı gir yavaş çık demek. Animasyon ivmesi demek; */
+    /* animation-fill-mode: animasyon sonsuz tekrarlı değilse son karede mi ilk karede mi kalacağını ifade eder.; */
+
+}
+@keyframes degisen_arkaplan{
+    /* 0%{} */
+    33%{
+        background-image: url(images/banner2.jpg);
+    }
+    66%{
+        background-image: url(images/banner3.jpg);
+    }
+    /* 100%{} */
+}
+
+
+
+
