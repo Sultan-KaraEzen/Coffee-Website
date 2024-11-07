@@ -137,6 +137,36 @@ header nav a:hover{
     height:460px;
 }
 /* transation hovera geçişin yavaş yavaş olmasını sağlar. */
+#bolum2,#bolum3{
+    margin-top:40px;
+    display:flex;
+    justify-content: space-between;
+}
+#bolum4{
+    height:270px;
+    margin-top: 20px;;
+}
+#bolum2 img,#bolum3 video{
+    width:340px;
+    height: 260px;
+    border:3px solid bisque;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+#bolum2 article,#bolum3 article{
+    width:640px;
+    height: 260px;
+    overflow:auto;
+    margin-right:10px;
+}
+#bolum3 video{
+    object-fit: fill;
+    margin-right: 10px;
+
+
+}
+
+
 
 
 
