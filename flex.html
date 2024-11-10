@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #buyuk{
+            width:700px;
+            height:600px;
+            background-color: aquamarine;
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            align-items: stretch;
+            flex-direction: row;}
+            /* flex-start başlangıca ortalar,flex end alta ortalar. */
+            /* space aroundda ögeler sağına ve soluna eşit boşluklar oluşturacak şekilde dağıtır. */
+            /* space between ilk kutu en sola ikinci en sağa kalan boşluk eşit dağıtılır.
+        */
+        #kutu1{
+            width:150px;
+            height: 150px;
+            background-color: red;
+            order:5;
+        }
+        #kutu2{
+            width:150px;
+            height:150px;
+            background-color: yellow;
+        }
+        #kutu3{
+            width:150px;
+            height: 150px;
+            background-color:blueviolet;
+        }
+/* Flex kapsayıcılara tanımlanır. Buyuk dive tanımlandı çünkü ötekileri o kapsar. */
+/* flex-boxın farkı kapsayıcı divlere uygulanır ve içindeki nesneler yanyana gelir.Streching özelliği kullanılmaz. Sığma durumuna göre yanyana alır. Float ya da position kullanarak yan yana getirmek gerekir. */
+/* inline-flex inline özelliğinden dolayı kutular yan yana gelir fakat flexten farkı streching olmazlar. */
+/* justify-content flex de kullanılır. Flexe göre hizalanmasını sağlar. */
+
+
+    </style>
+</head>
+<body>
+<div id="buyuk">
+    <div id="kutu1"></div>
+    <div id="kutu2"></div>
+    <div id="kutu3"></div>
+    <!-- <div id="kutu1"></div>
+    <div id="kutu2"></div>
+    <div id="kutu3"></div> -->
+</div>
+</body>
+</html>
