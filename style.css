@@ -27,6 +27,8 @@
     height: 150px;
 }
 #logo h1{
+   
+    font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 30px;
     letter-spacing: 5px;
     text-shadow:3px 3px 5px rgb(63,62,62) ;
@@ -49,6 +51,7 @@ header nav li{
 
 header nav a{
     /* display blok ise with değeri alabilir. */
+    font-family: "Lucida Console", Courier, monospace;
     display:block;
     width:150px;
     line-height: 50px;
@@ -158,6 +161,13 @@ header nav a:hover{
     height: 260px;
     overflow:auto;
     margin-right:10px;
+    margin-left:10px;
+    font-family: Times, "Times New Roman", Georgia, serif;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-align: justify;
+    text-indent: 30px;
+    
 }
 #bolum3 video{
     object-fit: fill;
@@ -193,64 +203,71 @@ header nav a:hover{
     text-align:center;
     display:block;
     line-height: 60px;
+    font-family: Times, "Times New Roman", Georgia, serif;
     /* line-height dikey ortalı yazılar yapar. */
 }
 /* a takları inlene inline elementler yazı kadar genişliğe sahiptir. */
 footer{
     height:235px;
+    width: 1000px;
     border:5px solid bisque;
     box-sizing: border-box;
+    display: flex;
     border-radius: 5px;
     margin-top:10px;
-}
-footer nav,
-footer section{
-    width:330px;
-    float:left;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Times, "Times New Roman", Georgia, serif;
+    font-size:12px;
+    text-decoration: none;
     
- 
+}
+footer nav ,
+footer section {
+    width: 330px;
+    height: 100%;
+    margin-left:10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    display:flex;
+    flex-direction: column;
+
+   
+   
+    
+}
+footer nav h2,
+footer section h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    font-size:15px;
+    justify-content: center;
+    text-align: justify;
 }
 
-footer nav{
-    padding-left:20px;
-    padding-top:40px;
-    box-sizing:border-box;
-    padding-top:5px;
-  
-
+footer nav i,
+footer section i{
+    display: block;
+    justify-content: space-between;
+    padding-right: 5px;
+    line-height: 20px;
+    
+   
 }
 
-footer nav h2{
-    text-align: left;
+footer nav a,
+footer section a{
+    display: block;
+    letter-spacing: 1px;
+    line-height: 20px;
     text-decoration: none;
-    line-height: 30px;
-    margin-top:0px;
-    padding-left: 0px;
-}
-footer section:first-child h2{
-    text-align: center;
-    text-decoration: none;
-    line-height: 30px;
-    margin-top:0px;
-    padding-left: 0px;
-}
-footer section:last-child h2{
-    text-align: right;
-    text-decoration: none;
-    line-height: 30px;
-    margin-top:0px;
-    padding-right: 20px;
 }
 
-footer nav:first-child a{
-    display:block;
-    text-align: left;
-}
-footer section:last-child a{
-    display:block;
-    padding-right: 20px;
-    text-align: right;
-}
+
+
+
+
 
 
 
